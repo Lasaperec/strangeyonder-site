@@ -1,78 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Strange Yonder</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #fafafa;
-      color: #222;
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fafafa;
+    color: #222;
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .images img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  @media (min-width: 768px) {
     .images {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      margin-bottom: 40px;
+      flex-direction: row;
+      justify-content: center;
     }
     .images img {
-      max-width: 90%;
-      height: auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 50%;
     }
-    @media (min-width: 768px) {
-      .images {
-        flex-direction: row;
-        justify-content: center;
-      }
-      .images img {
-        max-width: 50%;
-      }
-    }
-    p {
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.6;
-      font-size: 1.1em;
-    }
-    ul {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0;
-      list-style: none;
-      font-size: 1.1em;
-    }
-    ul li::before {
-      content: "• ";
-    }
-  </style>
-</head>
-<body>
-
-  <div class="images">
-    <img src="image-asset.jpg" alt="Strange Yonder Image 1" />
-    <img src="image-asset-1.jpg" alt="Strange Yonder Image 2" />
-  </div>
-
-  <p>
-    Strange Yonder is an independent artist management label that curates International and National tours throughout Australia & runs a record label ‘La Sape Records’. "Lovers of landscape; brought on by sound, with the idea of becoming a presence at every level of creation. Beginning as a hobby; born out of necessity to get involved, Strange Yonder has grown into an entity that consumes time, triggers frustration, breaks hearts, gives boners, pushes boundaries and deeply satisfies".
-  </p>
-
-  <h2>Past Tours:</h2>
-  <ul>
-    <li>Allah Las</li>
-    <li>Chastity Belt</li>
-    <li>Homeshake</li>
-    <li>Thee Oh Sees</li>
-    <li>Nancy Whang</li>
-    <li>Young Magic</li>
-    <li>Night Beats</li>
-    <li>Tomorrow's Tulips</li>
-    <li>The Growlers</li>
-  </ul>
-</body>
-</html>
+  }
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.1em;
+  }
+  ul {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+    font-size: 1.1em;
+  }
+  ul li::before {
+    content: "• ";
+  }
+</style>
